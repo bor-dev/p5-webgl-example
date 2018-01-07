@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P5 WebGL Sketch</title>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sketch-wrap canvas {
+            display: block;
+        }
+        #controls {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sketch-wrap"></div>
+    
+    <form id="controls">
+        <fieldset>
+            <legend>Speed Controls</legend>
+
+            <label for="x-speed">X:</label>
+            <input name="x-speed" id="x-speed" type="range" min="0.0" max="0.05" step="0.005" value="0.03">
+
+            <label for="y-speed">Y:</label>
+            <input name="y-speed" id="y-speed" type="range" min="0.0" max="0.05" step="0.005" value="0.01">
+
+            <label for="z-speed">X:</label>
+            <input name="z-speed" id="z-speed" type="range" min="0.0" max="0.05" step="0.005" value="0.02">
+        </fieldset>
+        <fieldset>
+            <legend>Cube Texture</legend>
+
+            <label for="cube-texture">URL</label>
+            <input name="cube-texture" id="cube-texture">
+
+            <button id="apply-texture-button" type="button">Apply Texture</button>
+        </fieldset>
+    </form>
+
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="assets/js/p5-0.5.16.js"></script>
+    <script type="text/javascript" src="assets/js/p5-dom-0.3.4.js"></script>
+    <script type="text/javascript" src="assets/js/sketch.js"></script>
+
+</body>
+</html>
